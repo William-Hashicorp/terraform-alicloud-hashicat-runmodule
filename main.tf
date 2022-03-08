@@ -1,6 +1,6 @@
 module "hashicat" {
   source  = "app.terraform.io/William-Hashicorp/hashicat/alicloud"
   version = "1.1.0"
-  #region = "ap-northeast-1"
-  #instance_type = ""
+  region = var.region
+  instance_type = var.instance_type
 }
